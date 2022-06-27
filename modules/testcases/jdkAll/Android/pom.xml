@@ -72,6 +72,18 @@
                 <module>elegantcalculator</module>
             </modules>
         </profile>
+        <profile>
+            <id>eaaharapp</id>
+            <activation>
+                <property>
+                    <name>module</name>
+                    <value>aaharapp</value>
+                </property>
+            </activation>
+            <modules>
+                <module>aaharapp</module>
+            </modules>
+        </profile>
     </profiles>
 
     <build>

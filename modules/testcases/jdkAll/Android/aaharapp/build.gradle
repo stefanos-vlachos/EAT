@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+group = 'org.jboss'
+version = '1.0.3.Final'
+
+description = "android additional testsuite: aaharapp"
+
+if (project.hasProperty('android')  && project.hasProperty('clone')){
+
+	task cloneAaharApp(type: Exec) {
+	        commandLine "git", "clone", "https://github.com/stefanos-vlachos/AAHAR-APP.git"
+	}
+
+        compileJava.dependsOn(cloneAaharApp)
+
+}
+
+if (project.hasProperty('android') && project.hasProperty('create')){
+
+	task runAaharApp(type: Exec) {
+		workingDir project.buildDir.toString() + "/../AAHAR-APP"
+		commandLine "./gradlew", "build"
+	}
+
+        compileJava.dependsOn(runAaharApp)
+
+}
