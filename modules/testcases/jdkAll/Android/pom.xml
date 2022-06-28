@@ -74,15 +74,15 @@
             </modules>
         </profile>
         <profile>
-            <id>ecommerceproject</id>
+            <id>genuineinspiration</id>
             <activation>
                 <property>
                     <name>module</name>
-                    <value>ecommerce</value>
+                    <value>genuineinspiration</value>
                 </property>
             </activation>
             <modules>
-                <module>ecommerceproject</module>
+                <module>genuineinspiration</module>
             </modules>
         </profile>
     </profiles>
