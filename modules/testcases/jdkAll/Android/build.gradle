@@ -11,7 +11,13 @@ if (project.hasProperty('android') && !project.hasProperty('module')){
         implementation project(':modules:testcases:jdkAll:Android:androidproject1')
         //implementation project(':modules:testcases:jdkAll:Android:bloodbankproject')
         //implementation project(':modules:testcases:jdkAll:Android:elegantcalculator')
+        //implementation project(':modules:testcases:jdkAll:Android:truthdare')
+        //implementation project(':modules:testcases:jdkAll:Android:themesample')
+        //implementation project(':modules:testcases:jdkAll:Android:genuineinspiration')
+        //implementation project(':modules:testcases:jdkAll:Android:voxrec')
         //implementation project(':modules:testcases:jdkAll:Android:imagebox')
+        //implementation project(':modules:testcases:jdkAll:Android:mycamera')
+        //implementation project(':modules:testcases:jdkAll:Android:mycompanion')
 
     }
 
@@ -37,6 +43,62 @@ if (project.hasProperty('android') && (project.getProperty('module')=="elegantca
 
     dependencies{
         implementation project(':modules:testcases:jdkAll:Android:elegantcalculator')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="truthdare")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:truthdare')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="themesample")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:themesample')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="genuineinspiration")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:genuineinspiration')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="voxrec")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:voxrec')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="imagebox")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:imagebox')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="mycamera")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:mycamera')
+    }
+
+}
+
+if (project.hasProperty('android') && (project.getProperty('module')=="mycompanion")){
+
+    dependencies{
+        implementation project(':modules:testcases:jdkAll:Android:mycompanion')
     }
 
 }
